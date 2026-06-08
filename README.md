@@ -56,13 +56,6 @@ No terminal do Kali, o SET registrou:
 [*] PARAM: email=v%C3%ADtima_teste%40email.com&pass=senha123
 ```
 
-📸 Evidências
-
-(As imagens estão na pasta /images)
-
-1. setoolkit_menu.png – Navegação pelos menus.
-2. cloned_facebook_page.png – Página clonada sendo acessada pela vítima.
-3. captured_credentials.png – Credenciais aparecendo no terminal do atacante.
 
 🧠 Explicação técnica do funcionamento
 
@@ -70,12 +63,6 @@ No terminal do Kali, o SET registrou:
 · Harvester: Um servidor HTTP (em Python/Flask) escuta na porta 80, captura qualquer requisição POST e extrai os parâmetros (usuário/senha).
 · Limitação crítica: A página clonada opera em HTTP puro, enquanto o Facebook real usa HTTPS. Navegadores modernos exibem um aviso "Não seguro" ou bloqueiam o envio de formulários em Mixed Content. Para contornar isso em laboratório, desabilitamos temporariamente a verificação HTTPS ou usamos um certificado autoassinado (não feito aqui por simplicidade).
 
-🔁 Melhorias propostas (nível sênior)
-
-· Evitar Mixed Content: Servir o clone via HTTPS com openssl e -ssl no SET (requer configuração adicional).
-· Evitar detecção: Usar Evilginx2 para funcionar como proxy reverso, capturando tokens 2FA e cookies de sessão.
-· Escalabilidade: Automatizar o processo com script Bash (ver /scripts/auto_phish.sh).
-· Persuasão: Usar técnicas de typosquatting (ex: faceb00k.com) ou engenharia social via e-mail.
 
 🛡️ Contramedidas defensivas (Blue Team)
 
