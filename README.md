@@ -94,7 +94,7 @@ Engenharia social Treinamento periódico com simulações de phishing (ex: GoPhi
 👤 Autor
 
 Desafio do curso Formação Cibersegurança – DIO
-Adaptado e aprimorado por [Seu nome aqui]
+Adaptado e aprimorado por [Samara Meireles Sampaio de Sousa]
 Data: Junho/2026
 
 ```
